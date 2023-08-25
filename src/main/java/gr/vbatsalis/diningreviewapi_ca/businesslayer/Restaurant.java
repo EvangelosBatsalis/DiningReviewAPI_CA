@@ -23,10 +23,7 @@ public class Restaurant {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id", nullable = false)
     private Long id;
-
-    private String name;
-
-    ArrayList<ArrayList<Integer>> listScore = new
+    
 
 
 }
