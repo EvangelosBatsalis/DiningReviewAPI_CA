@@ -17,18 +17,22 @@ public class DiningReview {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
+    @Column(name = "diningRev_id", nullable = false)
     private Long id;
 
-    @Column(name ="name", nullable = false)
+    @Column(name = "diningRev_name", nullable = false)
     private String name;
-    @Column(name ="peanutScore", nullable = true)
+
+    @Column(name = "peanut_Score", nullable = true)
     private int peanutScore;
-    @Column(name ="eggScore", nullable = true)
+
+    @Column(name = "egg_Score", nullable = true)
     private int eggScore;
-    @Column(name ="dairyScore", nullable = true)
+
+    @Column(name = "dairyScore", nullable = true)
     private int dairyScore;
-    @Column(name ="comment", nullable = true)
+
+    @Column(name = "comment", nullable = true)
     private String comment;
 
 }
