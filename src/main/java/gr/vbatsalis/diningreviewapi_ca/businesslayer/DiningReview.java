@@ -1,14 +1,15 @@
 package gr.vbatsalis.diningreviewapi_ca.businesslayer;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+//JPA-Entity annotations
+@Entity
+@Table(name = "DINING_REVIEW")
 
+//Lombok annotations
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -29,10 +30,10 @@ public class DiningReview {
     @Column(name = "egg_Score", nullable = true)
     private int eggScore;
 
-    @Column(name = "dairyScore", nullable = true)
+    @Column(name = "dairy_Score", nullable = true)
     private int dairyScore;
 
-    @Column(name = "comment", nullable = true)
+    @Column(name = "diningRev_comment", nullable = true)
     private String comment;
 
 }
